@@ -888,7 +888,7 @@ i {
 }
 .footer__container {
 }
-.soc-media__list {
+.soc-media__list--small {
   transform: scale(0.5);
 }
 .soc-media__item {

@@ -282,14 +282,27 @@ i {
   margin: 0 15px;
   flex-wrap: wrap;
 }
+.socials--small .socials-list__icon{
+    fill: #ffffff ;
+}
 .socials-list__item {
   flex: 0 0 90px;
 }
-.socials-list__link1::before {
+.socials-list__icon{
+    width: 100%;
+    height: 53px;
+    transition: all 0.3s;
+}
+.socials-list__icon:hover {
+    fill: #ff8b38;
+    transition: all 0.3s;
+    transform: translate(0px, -1px);
+  }
+/* .socials-list__link1::before {
   margin-left: 10px;
   content: "\f09a";
-}
-.socials-list__link2::before {
+} */
+/* .socials-list__link2::before {
   content: "\f099";
 }
 .socials-list__link3::before {
@@ -306,7 +319,7 @@ i {
 }
 .socials-list__link7::before {
   content: "\f09e";
-}
+} */
 
 .socials-list__item a::before {
   display: inline-block;
@@ -552,11 +565,26 @@ i {
 .text-wrap__subtitle {
   font-weight: 400;
 }
-.text-cotainer__download-content {
-  position: relative;
-  margin-left: 60px;
+.text-cotainer__download{
+    display: flex;
 }
-.text-cotainer__download-content::before {
+.text-cotainer__download-content {
+  /* position: relative; */
+  margin-left: 15px;
+
+}
+.text-cotainer__download-img{
+    fill: #ff8b38;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    padding: 8px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    margin-top:10px;
+}
+/* .text-cotainer__download-content::before {
   display: inline-block;
   font-family: FontAwesome;
   content: "\f0ee";
@@ -569,10 +597,10 @@ i {
   padding: 8px;
   font-size: 16px;
   line-height: 1;
-}
-._upload::before {
+} */
+/* ._upload::before {
   content: "\f0ed";
-}
+} */
 
 .text-cotainer__download-content h4 {
   line-height: 17px;
@@ -646,15 +674,17 @@ i {
   margin-bottom: 12px;
 }
 .card__img {
-  transition: 0.5s;
-  color: #ff8b38;
+  transition: 0.3s;
+  /* color: #ff8b38; */
+  fill: #ff8b38;
   border-radius: 50%;
   border: 2px solid #ff8b38;
-  padding: 12px;
-  font-size: 28px;
-  line-height: 1;
+  padding: 10px;
+  /* font-size: 28px;
+  line-height: 1; */
   display: inline-block;
-  min-width: 60px;
+  width: 60px;
+  height: 60px;
 }
 .card__img:hover {
   transform: scale(1.2);
@@ -1029,9 +1059,8 @@ i {
 }
 .socials--small{
     margin: 0 100px;
-    transform: scale(0.5);
+    transform: scale(0.3);
 }
-
 .corpare {
   font-size: 12px;
   line-height: 1.2;
